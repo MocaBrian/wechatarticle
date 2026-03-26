@@ -18,7 +18,8 @@ const isUTools = process.env.SERVER_ENV === `UTOOLS`
 const isCfWorkers = process.env.CF_WORKERS === `1`
 const isCfPages = process.env.CF_PAGES === `1`
 
-const base = isNetlify || isCfWorkers || isCfPages ? `/` : isUTools ? `./` : `/md/`
+const isGitHubPages = process.env.GITHUB_PAGES === `1`
+const base = isNetlify || isCfWorkers || isCfPages ? `/` : isUTools ? `./` : isGitHubPages ? `/wechatarticle/` : `/md/`
 
 const PKG_NAME_SPECIAL_CHARS = /[^\w-]/g
 

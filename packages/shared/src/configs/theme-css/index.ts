@@ -6,6 +6,7 @@
 import baseCSS from './base.css?raw'
 import defaultCSS from './default.css?raw'
 import graceCSS from './grace.css?raw'
+import mocaCSS from './moca.css?raw'
 import simpleCSS from './simple.css?raw'
 
 /**
@@ -20,6 +21,7 @@ export const themeMap = {
   default: defaultCSS,
   grace: graceCSS,
   simple: simpleCSS,
+  moca: mocaCSS,
 } as const
 
 export type ThemeName = keyof typeof themeMap

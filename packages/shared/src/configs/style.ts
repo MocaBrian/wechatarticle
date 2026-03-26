@@ -49,6 +49,11 @@ export const fontSizeOptions: IConfigOption[] = [
 
 export const colorOptions: IConfigOption[] = [
   {
+    label: `仙人掌绿`,
+    value: `#519320`,
+    desc: `MOCA品牌`,
+  },
+  {
     label: `经典蓝`,
     value: `#0F4C81`,
     desc: `稳重冷静`,
@@ -102,6 +107,11 @@ export const colorOptions: IConfigOption[] = [
     label: `樱花粉`,
     value: `#FFB7C5`,
     desc: `浪漫甜美`,
+  },
+  {
+    label: `仙人掌绿`,
+    value: `#3D8B37`,
+    desc: `MOCA品牌`,
   },
 ]
 
@@ -265,7 +275,7 @@ export const defaultStyleConfig = {
   isMacCodeBlock: true,
   isShowLineNumber: false,
   isCountStatus: false,
-  theme: themeOptions[0].value,
+  theme: themeOptions[3].value, // MOCA 先人掌主题
   fontFamily: fontFamilyOptions[0].value,
   fontSize: fontSizeOptions[2].value,
   primaryColor: colorOptions[0].value,
