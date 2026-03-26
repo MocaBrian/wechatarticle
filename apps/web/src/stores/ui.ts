@@ -8,7 +8,7 @@ import { store } from '@/utils/storage'
 export const useUIStore = defineStore(`ui`, () => {
   // ==================== 全局 UI 状态 ====================
   // 是否开启深色模式
-  const isDark = useDark()
+  const isDark = useDark({ initialValue: `light` })
   const toggleDark = useToggle(isDark)
 
   // 是否在左侧编辑
